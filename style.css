@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url('https://wallpapers.com/images/featured/colorful-tlzydzdb2ogq2b70.jpg');
+
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 5rem;
+    color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: greenyellow;
+}
+
+main {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(177, 177, 177);
+    transition: all 0.25s;
+    background-color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card > h3 {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    background-color: white;
+    font-family: 'Lugrasimo', sans-serif;
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 480px and up) */
+@media only screen and (min-width: 480px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }    
+}
